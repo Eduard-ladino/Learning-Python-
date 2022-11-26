@@ -1,0 +1,405 @@
+<section class="slide">
+    <section class="slide-tittle">
+        <h1>Python Language</h1>
+    </section> 
+</section>
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Lexical Structure</h2>
+  </section>
+  <section class="slide-body">
+    <section class="silde-section">
+      <p>The lexical structure of a programming language is the
+        <strong>rules</strong> that govern how we write source code to this language.</p>
+      </section>
+   </section>
+</section>   
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Lines</h2>
+  </section>
+  <section class="slide-body">
+    <section class="slide-block">
+      <p>
+        The lines are divided in physical lines each of one may end with
+        a comment. The comments start with a 
+        <code>#This is a comment in Python</code> ignoring the
+        following characters. The above comment is a blank comment because
+        this don't contain any character before the hash sign.
+      </p>
+    </section>
+	</section>
+</section>     
+
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Indentation</h2>
+  </section>
+  <section class="slide-body">
+    <section class="slide-block">
+      <p>
+        The indentation is very important because this is the manner
+        in what python divides the code in block of statements, the block
+        has the same indentation for his statements. To add two lines
+        we add the <strong>backslash</strong> this means that you don't add spaces.</p> 
+<pre><code>
+number=1\
++1 
+print(number)
+</code></pre>
+      <p>
+        The only exception is if the end of a parenthesis , bracket or brace
+        has not yet been closed.
+      </p> 
+      <section class="slide-section">
+        <h3>Continuation Line</h3> 
+<pre>
+<code>
+""" This is a continuation line
+this means that 
+each lines in continues to the 
+before
+"""
+</code>
+</pre>
+      </section>
+    </section>
+  </section>
+</section>
+<section class="slide">
+  <section class="slide-title">
+    <h2>Character set</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section"> 
+      <h2>Unicode (UTF-8)</h2> 
+      <p>This is a representation for each character. In python we can
+      choose the encoding of a source file.</p> 
+<pre>
+<code>
+# coding: utf-8
+print("using utf-8 encoding")
+</code>
+</pre>
+    </section>
+  </section>
+</section>
+<section class="slide">
+  <section class="slide-title">
+    <h2>Tokens</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <p>A token is a elementary words or reserve words of a language.</p>
+    </section>
+ </section>
+</section>
+
+<section class="slide">
+  <section class="slide-title"></section>
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Identifiers</h2>
+      <p>A identifier is a word that references a variable, upper and lower
+      letters can be used and the underscore at the beginning and after we
+      may add numbers and more letters. Don't use Homoglyphs.</p>
+    </section> 
+    <section class="slide-section">
+      <h2>Python identifier convention</h2>
+      <ul>
+        <li><p>Classes: start with uppercase</p></li> 
+        <li><p>Private: start with underscore</p></li>
+        <li><p>Strongly private: start with two underscore</p></li> 
+        <li><p>Variables: Snake case</p></li>
+      </ul>
+    </section>
+  </section>
+</section> 
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Reserved Words</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section"> 
+      <p>Python has 35 <strong>reserved words</strong> that we can't used how 
+        identifiers. There is another type that is <strong>soft words</strong> this
+      means that the words are reserved if has a certain structure.</p> 
+<pre>
+<code> 
+#this code print the all python keywords
+import keyword
+#Reserved words
+print(keyword.kwlist)  
+#Soft words
+print(keyword.softwlist)
+</code> 
+</pre>
+    </section>
+  </section>
+</section>
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Literals</h2>
+  </section>
+  <section class="slide-body">
+    <section class="slide-section">
+      <p>A literal is a string constant in your source code. You write
+      it literally.</p>
+    </section>
+  </section>
+
+</section>
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Statements</h2>
+  </section>
+  <section class="slide-body">
+    <section class="slide-section"> 
+      <p>A statements can be divided in single and compound statements.</p>
+    </section>  
+
+    <section class="slide-section">
+      <h2>Simple statement</h2> 
+      <p>A simple statement is contained in a single line.</p>
+    </section>
+    <section class="slide-section">
+      <h2>Compound statement</h2> 
+      <p>A compound statements is created with the same indentation level.</p>
+    </section>
+  </section>
+</section>
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Data Types</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-block">  
+      <p>A data type is a object that has attributes and items, with some
+        operations. There is two types of data type <strong>Mutable</strong>
+        and <strong>Immutable</strong> types.
+      </p>
+    </section> 
+
+    <section class="slide-block">
+      <h2>Built-in Object</h2>  
+      <p>The obj is the object type of Python, you can performs some operations
+      in objects</p> 
+      <ul>
+        <li><p><code>type(obj)</code></p></li>
+        <li><p><code>isinstance(obj, type)</code></p></li>
+      </ul>
+    </section>
+  </section>
+</section> 
+
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Numbers (Immutable)</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <p>Immutable means that when you performs operation in numbers 
+      python creates another number object.</p>
+    </section> 
+
+    <section class="slide-section">
+      <h2>Integer</h2> 
+      <ul>
+        <li><code>"0b" #Binary</code></li>
+        <li><code>"0o" #Octal</code></li>
+        <li><code>"0x" #Hexadecimal</code></li>
+      </ul>
+    </section> 
+
+
+    <section class="slide-section">
+      <h2>Operations</h2>
+      <ul>
+        <li><code>as_integer_ratio() # Returns a tuple of two ints (i, 1)</code></li>
+        <li><code>bit_count() # Returns the ones in binary representation</code></li>
+        <li><code>bit_length() # Returns the minimum numbers of bit to represent the number </code></li>
+        <li><code>from_bytes() # Returns an int from the bytes passed how the first parameter</code></li>
+        <li><code>to_bytes() # Returns a bytes representation in an specific
+          length of bytes</code></li>
+      </ul> 
+      <p>See more help to this function with the interpreter</p>
+    </section>
+    </section>
+</section>
+ 
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="silde-section">
+      <h2>Floating Point</h2>
+      <p>Floating point is number that has a decimal point, and a literal
+      may be express with a exponent suffix e or E. We can print the information
+      of this value in the following snippet code.</p> 
+<pre>
+<code> 
+import sys
+print(sys.float_info)
+</code>
+</pre> 
+    </section>  
+
+    <section class="slide-section">
+      <h2>Operations</h2> 
+      <ul>
+        <li><code>as_integer_ratio() # Returns the numerator and denominator of the floating point value</code></li> 
+        <li><code>from_hex() # Returns float from a string of hexadecimal value</code></li>
+        <li><code>hex() # Returns a hexadecimal string representation of the float value</code></li>
+        <li><code>is_integer() # Returns a boolean value if this value is a integer</code></li>
+      </ul>
+    </section>
+  </section>
+
+</section>
+
+<section class="slide">
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Complex</h2> 
+      <p>A complex number is a mix or real and imaginary part, in Python the
+      imaginary part is j that is in mathematics the squared root of -1.</p>
+    </section> 
+
+    <section class="slide-section">
+      <h2>Operations</h2>
+      <ul>
+        <li><code>conjugate() #Change the sign of the complex number</code></li>
+      </ul>
+    </section>
+  </section>
+
+</section>
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Underscore in Numerical Literals</h2>
+      <p>In python we can use underscore in a numerical literal to express
+      a invisible separation, this ad to us because is helpful to visual
+      assessment</p> 
+<pre><code>
+#print one million how a integer number
+print(1_000_000)
+</code></pre>
+    </section>
+  </section>
+</section>
+
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Sequences</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section"> 
+      <p>A sequence is a list of ordered items. Python called this types
+      iterables because we can access to it in a sequence manner. This
+      iterables are bounded or unbounded when there isn't a limit
+      the program run for ever.</p>
+    </section>
+  </section>
+
+</section>
+
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Strings (Immutable)</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <p>There is two types of strings, str and bytes.</p>
+    </section> 
+    <section class="slide-section">
+      <h3>str</h3>
+      <p>This sequence contains a list of characters.A str literal must be
+      closed between a double quote or single quote. When you need
+      more than one line to fill a string used triple quoted. PEP 8</p>
+<pre><code>
+name = "eduard"
+print(type(name))
+</code></pre>
+    </section> 
+  </section>
+</section>  
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>Escape Sequence</h2>
+  </section>
+  <section class="slide-body">
+    <section class="slide-section">
+      <p>A escape sequence is a way to include any character inside a string
+      literal.</p>
+      <ul>
+        <li><code>\</code>Ignore the end of a line.</li>
+        <li><code>\\</code>Backslash</li>
+        <li><code>\'</code>Single quote</li>
+        <li><code>\"</code>Double quote</li>
+        <li><code>\a</code>Bell</li>
+        <li><code>\b</code>Backspace</li>
+        <li><code>\f</code>Form feed</li>
+        <li><code>\n</code>Newline</li>
+        <li><code>\r</code>Carriage return</li>
+        <li><code>\t</code>Tab</li>
+        <li><code>\v</code>Vertical tab</li>
+        <li><code>\ DDD</code>Octal value</li>
+        <li><code>\ XX</code>Hexadecimal value</li>
+        <li><code>\N</code>Unicode character</li>
+        <li><code>\o</code>Any other character</li> 
+        <li><code>\u</code>Unicode character</li> 
+      </ul> 
+      <p>There is a handy notation to use a multiples backslash in
+      the same literal. We add r or R at the start of the quote.</p> 
+<pre><code>
+# this is a backslash with following a character 
+not_escape_sequence = r"\n"
+print(not_escape_sequence)
+</code></pre>
+    </section>
+  </section>
+
+</section>  
+
+
+<section class="slide">
+  <section class="slide-title">
+    <h2>bytes</h2>
+  </section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <p>A bytes is an ordered list of int with the size of 1 byte.
+      We can use the prefixed with b in string literal.</p> 
+<pre><code>
+# Create a bytes representation of your name
+print(rb"Hello")
+# Decode
+print(rb"Decoding the same message".decode())
+</code></pre>
+    </section>
+  </section>
+</section>
