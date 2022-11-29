@@ -1,3 +1,5 @@
+
+<script src="main.js"></script>
 <section class="slide">
     <section class="slide-tittle">
         <h1>Python Language</h1>
@@ -401,5 +403,123 @@ print(rb"Hello")
 print(rb"Decoding the same message".decode())
 </code></pre>
     </section>
+  </section> 
+</section> 
+
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>bytearray (Mutable)</h2> 
+      <p>bytearray is a derivation of bytes but you can change the values
+      behind it.</p> 
+
+<pre><code> 
+#example array bytes
+ba = bytearray([97,98,99])
+ba[1] = 97 
+print(ba.decode())
+</code></pre>
+    </section>
+  </section>
+</section> 
+
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Tuples (Immutable)</h2>
+      <p>A tuple is declare with parenthesis separated by commas, this is
+        called tuple literal. A tuple of two items are called a pair. To create a tuple you can also called <code>tuple()</code> function.</p>
+<pre><code>
+#Empty tuple
+print(())
+#Tuple of one item
+print((1,))
+#Tuple or a pair
+print((1,1))
+</code></pre>
+    </section>
   </section>
 </section>
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>List (Mutable)</h2>
+      <p>A list is a sequence of items of different types. You can use the
+      built in function list or with a brackets create a list. Create a list
+      with brackets notation is called list literal.
+      </p> 
+<pre><code>
+# Create a empty list
+print([]) 
+# Create a list with 3 items
+print([1,2,3]) 
+# Create a list with 1 item
+print(100[])
+</code></pre>
+    </section>
+  </section>
+
+</section>
+
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Sets (Mutable and Immutable)</h2>
+      <p>A set is a data type where the items are added without repeat
+      one of them, so only unique items are added to this. There is
+      to types of set, normal set  and frozen set that is immutable set.
+
+      To denote a set is with keys and multiples value, remember that an
+      empty set is created with the built in function set.</p>
+
+<pre><code>
+#Empty set
+print(set())
+#set with items
+print({1, 2 ,2 , 3})
+#set with 1 item
+print({1})
+</code></pre>
+    </section>
+  </section>
+</section> 
+
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Dictionary (Mutable)</h2>
+      <p>A dictionary or called hash function in another programming language,
+      is a data structure where you can save a key with a determined value,
+      the keys of that function are unique. This is also called mapping. 
+
+      You can create a dictionary with keys, this is called dictionary literal, or with a built in function.
+      </p> 
+
+<pre><code>
+#Create empty dictionary
+print({})
+#Create a dictionary with 1 item
+print({"name": "Eduard"}) 
+#Create a dictionary with built in function
+print(dict([("name", eduard), ("lastname": "ladino"))])
+</code></pre>
+    </section>
+  </section>
+
+</section> 
+
