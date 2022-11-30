@@ -520,6 +520,175 @@ print(dict([("name", eduard), ("lastname": "ladino"))])
 </code></pre>
     </section>
   </section>
+</section>
 
+
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>None</h2>
+      <p>This means that there isn't a object.This reserved word can be use
+      in dictionary.</p>
+    </section>
+  </section>
 </section> 
 
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Callables</h2>
+      <p>A callable usually creates a new instance of the type that was created.</p>
+    </section>
+  </section>
+</section> 
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Boolean Values</h2>
+      <p>In python any item is a boolean value, this boolean are divided in 
+        <strong>truthy</strong> and <strong>falsy.</strong>. The bool type
+      is a subclass of int type.You can use the built in function bool
+      to create a new boolean object.</p>
+<pre><code>
+#example with truthy and falsy
+print(bool(1))
+print(bool(None))
+</code></pre>
+    </section>
+  </section>
+</section> 
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Variables</h2> 
+      <p>A variable is a container that references an object in Python.
+        <strong>Binds</strong> means that the name of the variable is
+        connected with some object, in other words if we called the name
+        of this variable, we called the object that is referenced by this
+        variable name. We can also <strong>unbind</strong> a variable with 
+        the reserved word <strong>del</strong>. If we bind a bound variable
+        is called <strong>rebinding</strong>.
+      </p>  
+
+
+    </section> 
+    <section class="slide-section">
+      <h2>Assignment Statement</h2>
+      <p>An assignment is a binding of a target (lefthand side) with some expression(righthand side).</p>
+<pre><code> 
+#Assignment
+#target = expression
+#binding a str object to a name variable
+name = "Camilo" 
+#unbinding a str object to a name variable
+del name
+</code></pre>
+    </section>
+
+  </section>
+</section> 
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Attributes vs Items</h2>
+      <p>A item is denote by a brackets meanwhile a attribute is denote with
+        a dot. The attributes that are callable are called <strong>Methods.</strong></p>
+    </section>
+  </section>
+</section>
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Complex Assignment</h2>
+<pre><code>
+#multiples targets
+a = b = c = 10 
+print(a,b,c)
+#unpacking assignment
+a, b ,c = [10, 11, 12]
+#swap items
+a, b = b, a
+# with * binds all the items of a list
+score = [3.4, 2.4, 2.5]
+pass, *low = score
+</code></pre>
+    </section>
+  </section>
+</section>
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Augmented Assignment</h2>
+      <p>A augmented assignment operator can rebinding or modify the 
+      object.</p>
+<pre><code>
+#simple example of a adding with augmented assignment +=
+a = 10
+b = 10
+a += b
+</code></pre> 
+
+    <h2>Comparison Chaining</h2>
+    <p>This chaining comparison follows the principle of short-circuiting that
+    means that evaluates the first value and if is get the desire value
+    don't evaluates the others.</p>
+    </section> 
+<pre><code>
+#and
+None and 10
+#or
+None or 10
+</code></pre>
+  </section>
+</section> 
+
+<section class="slide">
+  <section class="slide-title"></section>
+
+  <section class="slide-body">
+    <section class="slide-section">
+      <h2>Conditional Operator</h2>
+      <p>The conditional operator perform a boolean operation called condition
+        and depending of the boolean result of this condition performs some
+        branches. If the value is true, return the true value or if this condition is
+      false return the false value.</p> 
+<pre><code>
+10 if True else 20 
+a = 5
+b = 7
+True if a < b else False
+</code></pre> 
+
+    <section class="slide-section">
+      <h2>Assignment Expression</h2>
+      <p>You can assign a variable in a condition this first binds the value
+      and then evaluates the condition.</p>
+<pre><code>
+#if the value of a if greater than 2 print Hello
+if(a := 10 > 2): print("Hello")
+</code></pre>
+    </section>
+    </section>
+  </section>
+
+</section>
